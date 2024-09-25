@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spil</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img id="logo" src="img/logo.svg" alt="Logo" />
+        </a>
+        <ul>
+          <li><a href="index.html">Startsiden</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <div id="hel_kugle_container">
+              <div id="hel_kugle_sprite"></div>
+            </div>
+
+            <div id="hel_kugle_container_2">
+              <div id="hel_kugle_sprite_2"></div>
+            </div>
+
+            <div id="hel_kugle_container_3">
+              <div id="hel_kugle_sprite_3"></div>
+            </div>
+
+            <div id="knust_kugle_container">
+              <div id="knust_kugle_sprite"></div>
+            </div>
+
+            <div id="knust_kugle_container_2">
+              <div id="knust_kugle_sprite_2"></div>
+            </div>
+          </div>
+          <div id="game_ui">
+            <div id="score_board"></div>
+            <div id="score_board_tal"></div>
+            <div id="life_board_1"></div>
+            <div id="life_board_2"></div>
+            <div id="life_board_3"></div>
+            <div id="life_board_tal"></div>
+            <div id="time_board">
+              <div id="roed"></div>
+              <div id="lys"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="start" class="hide">
+          <div id="information_knap" class="glow"></div>
+          <div id="start_knap" class="glow"></div>
+        </div>
+
+        <div id="game_over" class="hide">
+          <div id="game_over_points"></div>
+          <div id="genstart1" class="glow"></div>
+          <div id="genstart11" class="glow"></div>
+        </div>
+        <div id="level_complete" class="hide">
+          <div id="level_complete_points"></div>
+          <div id="genstart2" class="glow"></div>
+          <div id="genstart22" class="glow"></div>
+        </div>
+        <!-- Hvis du har tid -->
+        <div id="information" class="hide">
+          <div id="genstart33" class="glow"></div>
+        </div>
+      </div>
+      <div id="sounds">
+        <!-- Fjern controls når du er færidg -->
+        <!-- INDSÆT LYD -->
+        <audio src="lyde/kling2.mp3" id="sound_good"></audio>
+        <audio src="lyde/knas2.mp3" id="sound_bad"></audio>
+      </div>
+    </main>
+    <script src="js.js"></script>
+  </body>
+</html>

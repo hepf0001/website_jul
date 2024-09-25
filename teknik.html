@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teknik</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img id="logo" src="img/logo.svg" alt="Logo" />
+        </a>
+        <ul>
+          <li><a href="index.html">Startsiden</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Teknik</h1>
+      <div class="aktivitetsdiagram">
+        <img
+          class="aktivitetsdiagram_billede"
+          src="img/diagram01.svg"
+          alt="Aktivitetsdiagram"
+        />
+        <div>
+          <h2>Aktivitetsdiagram</h2>
+          <p>
+            Mit aktivitetsdiagram illustrerer det overordnede forløb i mit spil.
+            Det beskriver, hvordan startskærmen vises, og hvordan spillet
+            påbegyndes. Spillet har en varighed på 20 sekunder. For at vinde
+            kræves 15 point eller mere. Ved en score under 15 point eller tab af
+            alle tre liv betragtes spillet som tabt. Point optjenes ved at
+            klikke på intakte julekugler, mens liv mister ved at klikke på
+            knuste. Spillet afsluttes automatisk, når tiden udløber.
+          </p>
+
+          <h2>Spillets koncept</h2>
+          <p>
+            For at gøre julen fuldkommen for Nissemor, er det tid til at pynte
+            juletræet. Efter en tur i skoven med hendes hund har Nissemor fundet
+            det perfekte træ. På loftet har hun fundet de gamle julekugler frem,
+            men desværre er nogle af dem gået i stykker.
+          </p>
+          <p>
+            Din opgave er at hjælpe Nissemor med at pynte juletræet ved at fange
+            de intakte julekugler. Hvert klik på en hel julekugle bringer et
+            glimt af julens magi, og når du har fanget 15 af dem, har du reddet
+            julen for Nissemor. Pas på med ikke at vælge de ødelagte kugler
+            eller fange for få, for det kan ende med "game over", og julen vil
+            være ødelagt for Nissemor. Lad os sammen skabe et smukt juletræ og
+            redde julen for Nissemor!
+          </p>
+        </div>
+      </div>
+
+      <div class="state_machine_diagram">
+        <h2>State machine diagram</h2>
+        <p>
+          I mit State Machine Diagram dykker jeg endnu dybere ned i detaljerne
+          vedrørende funktionerne i mit spil og deres opbygning. Jeg
+          specificerer for eksempel, hvad der præcist sker, når man klikker på
+          en intakt julekugle. Diagrammet fungerer som en vejledning, der guider
+          mig gennem opsætningen i JavaScript, så jeg nøjagtigt kan implementere
+          og styre de forskellige aspekter af spillet.
+        </p>
+      </div>
+      <img src="img/diagram1.svg" alt="State Machine Diagram" />
+    </main>
+    <footer>
+      <h4>Helena Louise Pfeffer // Juletræet 2023</h4>
+    </footer>
+    <script src="js.js"></script>
+  </body>
+</html>

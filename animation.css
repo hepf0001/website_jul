@@ -1,0 +1,207 @@
+.fald {
+    animation-name: fald_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fald_kf {
+    0% {
+        transform: translateY(-110%);
+    }
+  
+    100% {
+      transform: translateY(450%);
+    }
+  }
+
+  .frys {
+    animation-play-state: paused;
+  }
+
+  /*position*/
+  .pos1 {
+    left: 10%;
+  }
+  
+  .pos2 {
+    left: 20%;
+  }
+
+  .pos3 {
+    left: 30%;
+  }
+  
+  .pos4 {
+    left: 40%;
+  }
+
+  .pos5 {
+    left: 50%;
+  }
+
+  .pos6 {
+    left: 60%;
+  }
+
+  .pos7 {
+    left: 70%;
+  }
+
+  .pos8 {
+    left: 80%;
+  }
+
+  .pos9 {
+    left: 90%;
+  }
+
+
+  /*Speed*/
+  .speed1{
+    animation-duration: 1.5s;
+  }
+
+  .speed2{
+    animation-duration: 1.75s;
+  }
+
+  .speed3{
+    animation-duration: 2s;
+  }
+
+  .speed4{
+    animation-duration: 2.2s;
+  }
+
+  .speed5{
+    animation-duration: 2.4s;
+  }
+
+  .speed6{
+    animation-duration: 2.6s;
+  }
+
+
+  /*delay*/
+  .delay1{
+    animation-delay: .5s;
+  }
+
+  .delay2{
+    animation-delay: .75s;
+  }
+
+  .delay3{
+    animation-delay: 1s;
+  }
+
+  .drej_forsvind_knust {
+    animation-name: drej_forsvind_knust_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes drej_forsvind_knust_kf {
+    0% {
+      transform: rotate(0);
+    }
+
+    50%{
+        background-image: url(img/oedelagt_kugle_2.svg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      background-image: url(img/oedelagt_kugle_2.svg);
+      opacity: 0;
+    } 
+  }
+
+  .drej_forsvind_hel {
+    animation-name: drej_forsvind_hel_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes drej_forsvind_hel_kf {
+    0% {
+      transform: rotate(0);
+    }
+
+    50%{
+        background-image: url(img/funklende_kugle.svg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      background-image: url(img/funklende_kugle.svg);
+      opacity: 0.7;
+    } 
+  }
+
+
+  /*timer*/
+#lys{
+    position: absolute;
+    background-image: url(img/lys_3.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#roed{
+    position: absolute;
+    background-image: url(img/lys_4.svg);
+    background-size: cover;
+    width: 80%;
+    height: 39.5%; 
+    top: 9.3%;
+    left: 13%;
+}
+
+#time_board{
+    position: absolute;
+    width: 2%;
+    aspect-ratio: 1/9;
+    top: 15%;
+    left: 2%;
+}
+
+.timer{
+    animation-name: timer_kf;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes timer_kf{
+    0%{
+        clip-path: inset(0 0 0);
+    }
+    100%{
+        clip-path: inset(100% 0 0);  
+    }
+}
+
+.glow{
+    animation: glow_kf 2s infinite linear;
+}
+
+@keyframes glow_kf{
+    0%{
+        filter: drop-shadow(0 0 0 #69e44a);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 8px #5bc540);
+    }
+    100%{
+        filter: drop-shadow(0 0 0 #69e44a);
+    }
+}
+
